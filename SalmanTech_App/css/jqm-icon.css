@@ -1,0 +1,15 @@
+﻿.ui-icon-help {
+	background: #fff;
+	background: rgba(0,0,0,.4);
+	background-image:url('images/standard.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+
+.ui-icon-help {
+background-image:url('images/standard.png');
+background-size: 18px 18px;
+}
+}

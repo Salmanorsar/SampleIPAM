@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+		xm3lns:gap	= "http://phonegap.com/ns/1.0"
+		id			= "com.salmantech.gradepointcalculator"
+		version		= "1.0.0">
+
+		<name>Ipam Grade Calculator</name>
+
+		<description>
+			This program is design to help you calculate your grades
+		</description>
+
+		<author href="http://www.salmantech.com" email="salmanorsar2009@yahoo.com">
+			SalmanTech
+		</author>
+
+		<preference name="permissions" value="none" />
+		
+		<icon src="res/android/mipmap-mdpi/ic_launcher.png"		gap:platform="android"	gap:qualifier="ldpi" />
+		<icon src="res/android/mipmap-mdpi/ic_launcher.png"		gap:platform="android"	gap:qualifier="mdpi" />
+		<icon src="res/android/mipmap-hdpi/ic_launcher.png"		gap:platform="android"	gap:qualifier="hdpi" />
+		<icon src="res/android/mipmap-xhdpi/ic_launcher.png"	gap:platform="android"	gap:qualifier="xhdpi" />
+		<icon src="res/android/mipmap-xxhdpi/ic_launcher.png"	gap:platform="android"	gap:qualifier="xxhdpi" />
+		<icon src="res/android/mipmap-xxxhdpi/ic_launcher.png"	gap:platform="android"	gap:qualifier="xxxhdpi" />
+		<icon src="res/android/playstore-icon.png"				gap:platform="android"	gap:qualifier="mdpi" />
+		
+		<icon src="res/ios/icon.png" 				gap:platform="ios" 		width="57"	height="57"	/>
+		<icon src="res/ios/icon@2x.png" 			gap:platform="ios" 		width="114"	height="114"/>
+		<icon src="res/ios/icon-60.png" 			gap:platform="ios" 		width="60"	height="60"	/>
+		<icon src="res/ios/icon-72.png" 			gap:platform="ios" 		width="72"	height="72"	/>
+		<icon src="res/ios/icon-72@2x.png" 			gap:platform="ios" 		width="144"	height="144"/>
+		<icon src="res/ios/iconSmall-50.png" 		gap:platform="ios" 		width="50"	height="50"	/>
+		<icon src="res/ios/icon-Small-50@2x.png" 	gap:platform="ios" 		width="100"	height="100"/>
+</widget>

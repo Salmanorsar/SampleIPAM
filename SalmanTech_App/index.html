@@ -1,0 +1,756 @@
+<!doctype html>
+
+<html class="">
+<!--<![endif]-->
+<head><title>SalmanTech Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="js/jquery.js" ></script>
+<script src="js/jquery.mobile.js" ></script>
+<script src="js/scriptfile.js" ></script>
+<script src="js/respond.min.js" ></script>
+
+<link rel="stylesheet" href="css/jquery.mobile.theme.css">
+<link rel="stylesheet" href="css/boilerplate.css">
+<link rel="stylesheet" href="css/SalmanSample.css"  >
+<link rel="stylesheet" href="css/jquery.mobile.structure.css">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+a:visited {
+	text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+	
+	<!--Home Window-->
+	<div class="gridContainer clearfix" id="Home" data-role="page" data-theme="a">
+	
+		<div id="FixedHeader">
+			SalmanTech | Grade Point Calculator
+									
+  			
+  			<div data-role="controlgroup" data-type="horizontal"  id="ButtonSize" >
+  				<a href="#Cumulated" data-role="button" id="CumSizebtn" data-icon="cumu">Cumulated</a>
+  				<a href="#ExamCon" data-role="button" id="ExSizebtn" data-icon="excon">Exams | Continuous</a>
+  				<a href="#About" data-role="button" id="AboutSizebtn" data-icon="">About</a>
+  			</div >
+  		</div>
+  		
+  		<div data-role="content" id="OrganiseContent">
+		
+  		<hr class="ui-btn-hover-a">
+  		 		
+  		<div id="Logo-Text" data-role="table">
+  		<table class="ui-btn-hover-a">
+  			<tbody>
+  				<tr>
+  					<td><img src="res/IpamLogo.jpg" alt="Ipam Logo" class="Logo"></td>
+  					<td class="LogoText">INSTITUTE OF PUBLIC ADMINISTRATION AND MANAGEMENT<br>(IPAM - USL)</td>
+  				</tr>
+  			</tbody>
+  		</table>
+  		</div>
+  		
+  		<hr class="ui-btn-hover-a">
+  		
+  		<div id="GradeInput" data-role="panel">
+  			<table>
+  				<tbody>
+  					<tr>
+  						<td class="formatGrade" colspan="6">Enter your grades below and click on calculate</td>
+  					</tr>
+  						
+					<tr>
+						<td><input  class="InputBox" id="InputBox1"></td>
+						<td><input  class="InputBox" id="InputBox2"></td>
+						<td><input  class="InputBox" id="InputBox3"></td>
+						<td><input  class="InputBox" id="InputBox4"></td>
+						<td><input  class="InputBox" id="InputBox5"></td>
+						<td><input  class="InputBox" id="InputBox6"></td>
+					</tr>
+				</tbody>
+			</table>
+
+  		</div>
+  		
+  		<hr class="ui-btn-hover-a">
+  		
+  		<div id="GradeDisplay" >
+			<table class="ui-btn-hover-a">
+			   <tbody>
+				<tr>
+					<td id="CtrlBtns">
+						<button name="Calculate" id="CalBtn">Calculate</button>
+						<button id="Reset">Clear</button>
+						<button name="Save" id="HomeSave">Save</button>
+						<button name="Exit" id="HomeRetrieve">Retrieve</button>
+					</td>
+					
+					<td>
+						<table class="ui-btn-hover-a">
+							<tr>
+								<td><input id="GradeOne" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeTwo" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeThree" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeFour" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeFive" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeSix" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="AverageGP" value="" readonly="readonly"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			   </tbody>
+			</table>
+		</div>
+		</div> <!--Content Section Ends here-->
+
+  	    </div> <!--Home Window ends-->
+    
+	    
+	    <!--Cumulated Window-->
+  		<div class="gridContainer clearfix" id="Cumulated" data-role="page" data-theme="a">
+  			<div id="FixedHeader">
+			SalmanTech | Cumulated Grade Point Calculator
+			
+			<div data-role="controlgroup" data-type="horizontal" id="ButtonSize">				
+				<a href="#Home" data-role="button" id="Home" data-icon="home">Home</a>
+				<a href="#" data-role="button" id="Back" data-icon="back" 
+				data-rel="back" data-direction="reverse">Back</a>
+				<a href="#ExamCon" data-role="button" id="Next" data-icon="forward">Next</a>				
+			</div>
+		</div>
+		
+		<div data-role="content" id="OrganiseContent">
+		
+		<hr class="ui-btn-hover-a">		
+		
+		<a href="" id="EnterDetails" data-role="button" data-icon="arrow-d" data-iconpos="right">
+		<span id="textctrl" >Enter Details</span></a>
+		
+		<table width="100%" class="ui-btn-hover-a">
+			<tr id="CtrlBtns">
+				
+				<td>
+					<table id="CtrlDetails" class="ui-btn-hover-a">
+						<tbody >
+						
+							<tr>
+								<td><label for="Name" id="ButtonSize">Name:</label></td>
+								<td><input id="Name" value=""></td>
+							</tr>
+							
+							<tr>
+								<td><label for="IdNo" id="ButtonSize">Reg. No:</label></td>
+								<td><input id="IdNo" value=""></td>
+							</tr>
+							
+							<tr>
+								<td><label for="CurrentYr" id="ButtonSize">Year:</label></td>
+								<td><input id="CurrentYr"></td>
+							</tr>
+
+							<tr id="DepartmentTD">
+								<td ><label for="Depart" id="ButtonSize">Department:</label></td>
+								<td ><select id="Depart" name="Departmanet">
+										<option value="Applied Accounting">Applied Accounting</option>
+										<option value="Information Systems">Information Systems</option>
+										<option value="Business Administration">Business Administration</option>
+										<option value="Public Sector Management">Public Sector Management</option>
+										<option value="Financial Services">Financial Services</option>
+										<option value="SpecifyDept">--Specify department</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="ctrlDept"><label for="EnterDepart" id="ButtonSize">Department:</label></td>
+								<td><input id="EnterDepart"></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>				
+			</tr>		
+		</table>
+		
+		<hr class="ui-btn-hover-a">
+		
+		<table class="ui-btn-hover-a" width="55%">
+			<tbody>
+				<tr>
+					<td><span id="CumuPoint">Number of Year(s) to Cumulate</span></td>
+				</tr>
+				
+				<tr>
+					<td>
+						<div data-role="fieldcontainer" id="ButtonSize">
+							<button id="Cumulate1yr" >One Year</button>
+							<button id="Cumulate2yr" >Two Years</button>
+							<button id="Cumulate3yr" >Three Years</button>
+							<button id="Cumulate4yr" >Four Years</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<hr class="ui-btn-hover-a">
+			
+		<div id="YearCumulation">
+						
+			<div id="Cumulateyr">
+				<table id="GradeDisplay" class="ui-btn-hover-a">
+					<tbody>
+						<tr><td colspan="2" id="NumberOfYears">Four Years Cumulation</td></tr>
+						<tr>
+							<td id="CumuCtrlBtns">
+								<button id="cumuCalBtn">Calculate</button>
+								<button id="CumuClearBtn">Clear</button>
+								<button id="CumuSave">Save</button>
+								<button id="CumuRetrieve">Retrieve</button>
+							</td>
+										
+							<td>
+								<table class="ui-btn-hover-a">
+									<tr id="Firstrow">
+										<td><label for="CumuInputBox1" id="ButtonSize">
+										<span id="YearOne">Year One AGP</span></label></td>
+										<td><input id="CumuInputBox1"></td>
+									</tr>
+									
+									<tr id="Secondrow">
+										<td><label for="CumuInputBox2" id="ButtonSize">
+										<span id="YearTwo">Year Two AGP</span></label></td>
+										<td><input id="CumuInputBox2"></td>			
+									</tr>
+									
+									<tr id="Thirdrow">
+										<td><label for="CumuInputBox3" id="ButtonSize">
+										<span id="YearThree">Year Three AGP</span></label></td>
+										<td><input id="CumuInputBox3"></td>			
+									</tr>
+									
+									<tr id="Fourthrow">
+									<td><label for="CumuInputBox4" id="ButtonSize">
+										<span id="YearFour">Year Four AGP</span></label></td>
+										<td><input id="CumuInputBox4"></td>				
+									</tr>
+
+									<tr>
+										<td><label for="TotalAGP" id="ButtonSize">Total AGP</label></td>
+										<td><input id="TotalAGP" readonly="readonly"></td>
+									</tr>
+									
+									<tr>
+										<td><label for="SemesterAGP" id="ButtonSize">Cumulated AGP</label></td>
+										<td><input id="SemesterAGP" readonly="readonly"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				</div> <!--End of yearly cumulation-->
+			</div>
+			
+		</div> 	  		
+  		</div> <!--End of Cumulated Window-->
+  	
+  	
+  		<!--Exams Continuous Window-->
+  		<div class="gridContainer clearfix" id="ExamCon" data-role="page" data-theme="a">
+  			<div id="FixedHeader">
+			SalmanTech | Exams Continuous Grade Calculator
+			
+			<div data-role="controlgroup" data-type="horizontal" id="ButtonSize">				
+				<a href="#Home" data-role="button" data-icon="home" id="Home">Home</a>
+				<a href="#" data-role="button" data-icon="back" id="Back" 
+				data-rel="back" data-direction="reverse">Back</a>
+				<a href="#About" data-role="button" data-icon="forward" id="Next">Next</a>				
+			</div>
+		</div>
+		
+		<div data-role="content" id="OrganiseContent">
+			
+			<hr class="ui-btn-hover-a">
+			<div>
+			<table class="ui-btn-hover-a">
+				<tbody>
+					<tr id="CtrlBtns">
+						<th>Exams</th>
+						
+						<th>Continuous</th>
+						
+						<th>Total Grade</th>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex1" maxlength="5"></td>
+						
+						<td><input id="Con1" maxlength="5"></td>
+						
+						<td><input id="TG1" readonly="true" ></td>
+
+					</tr>
+					
+					<tr>
+						<td><input id="Ex2" maxlength="5"></td>
+						
+						<td><input id="Con2" maxlength="5"></td>
+						
+						<td><input id="TG2" readonly="true"></td>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex3" maxlength="5"></td>
+						
+						<td><input id="Con3" maxlength="5"></td>
+						
+						<td><input id="TG3" readonly="true"></td>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex4" maxlength="5"></td>
+						
+						<td><input id="Con4" maxlength="5"></td>
+						
+						<td><input id="TG4" readonly="true"></td>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex5" maxlength="5"></td>
+						
+						<td><input id="Con5" maxlength="5"></td>
+						
+						<td><input id="TG5" readonly="true"></td>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex6" maxlength="5"></td>
+						
+						<td><input id="Con6" maxlength="5"></td>
+						
+						<td><input id="TG6" readonly="true"></td>
+					</tr>
+
+				</tbody>
+			</table>
+			</div>
+			
+			<hr class="ui-btn-hover-a">
+			
+			<div>
+				<table class="ui-btn-hover-a">
+					<tbody>
+						<tr>
+							<td id="ECCtrlBtns">
+								<button id="ECCalBtn">Calculate</button>
+								<button id="examClear">Clear</button>
+								<button id="ECSave">Save</button>
+								<button id="ECRetrieve">Retrieve</button>
+							</td>
+							
+							<td>
+							<form method="post" action="">
+								<label for="TextComment"><span id="textctrl">Comment:</span></label>
+								<textarea type="text" rows="3" cols="20" lang="en-us" 
+								id="TextComment" readonly="true" wrap="hard" title="Comment"></textarea>
+							</form>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<hr class="ui-btn-hover-a">
+			
+		<div id="ButtonSize" align="center">
+				You may launch the Complete Grade Calculator by clicking this
+				<table>
+					<tbody>
+						<tr>
+							<td><a href="data/FullExCon.html" data-role="button" id="FullExCon" 
+							data-rel="dialog" data-prefetch data-inline="true" data-ajax="false">
+				<span id="Home">Complete Exam Continuous Grade Calculator</span></a></td>
+						</tr>
+					</tbody>
+				</table>
+				
+		</div>
+			
+		</div>
+  		</div> <!--Exam Continuous Window ends-->
+  	
+  	
+  		<!--Help Window-->
+  		<div class="gridContainer clearfix" id="Help" data-role="page" data-theme="a">
+  			<div id="FixedHeader">
+			SalmanTech | Help Page
+			<div data-role="controlgroup" data-type="horizontal" id="ButtonSize" >				
+				<a href="#Home" data-role="button" data-theme="a" data-inline="true" data-icon="home" id="Home">Home</a>
+				<a href="#" data-theme="a" data-role="button" data-inline="true" data-icon="back" id="Back" 
+				data-rel="back" data-direction="reverse">Back</a>
+				<a href="#Cumulated" data-theme="a" data-role="button" data-icon="forward" 
+				data-inline="true" data-iconpos="right" id="Next">Next</a>				
+			</div>	
+		</div>
+		
+		<div data-role="content" id="OrganiseContent">
+			
+			<hr class="ui-btn-hover-a">
+			
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<div id="LeftMenu" data-role="menu">
+								<div id="MainWinHelp" data-role="collapsible" data-content-theme="b">
+									<legend><span  id="MainWinHelp">Main Grade</span></legend>
+										<ul data-role="listview">
+											<li><a href="" id="MainIntro">Introduction</a></li>
+											<li><a href="" id="MainPro">Procedure of Use</a></li>
+							
+											<li><a href="" id="MainSec1">Section One</a></li>
+											<li><a href="" id="MainSec2">Section Two</a></li>
+											<li><a href="" id="MainSec3">Section Three</a></li>
+											<li><a href="" id="MainSec4">Section Four</a></li>
+										</ul>
+								</div>
+				
+								<div id="ExamConHelp" data-role="collapsible"  data-content-theme="b">
+									<legend><span  id="ExamConHelp">Exam | Continuous</span></legend>
+										<ul data-role="listview">
+											<li><a href="" id="ECOverview">Overview</a></li>
+											<li><a href="" id="ECPro">Procedure of use</a></li>
+											<li><a href="" id="ECCompPro">Complete Grade</a></li>
+										</ul>
+					
+								</div>
+				
+								<div id="CumulatedHelp" data-role="collapsible"  data-content-theme="b">
+									<legend><span  id="CumulatedHelp">Cumulated Grade</span></legend>
+										<ul data-role="listview">
+											<li><a href="" id="CumuOverview">Overview</a></li>
+											<li><a href="" id="CumuPro">Procedure of Use</a></li>
+										</ul>
+				
+								</div>
+				
+							</div> <!--End of Left Menu-->
+						</td>
+						
+						<td id="ExtendRight">
+							<div id="ControlRight" >
+								
+							</div> <!--End of Right Menu-->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+				<div>
+					<hr class="ui-btn-hover-a"><font color="#e7f7ff" face="droid" size="2px">SalmanTech | Grade Point 
+					Calculator<br>All Right Reserved &copy; 2015</font>
+				</div>
+
+		</div>
+ 		
+  		</div> <!--Help Window ends-->
+  	
+  	
+  		<!--About Window-->
+  		<div class="gridContainer clearfix" id="About" data-role="page" data-theme="a">
+  			<div id="FixedHeader" >
+			About SalmanTech Grade Point Calculator
+			
+			<div data-role="controlgroup" data-type="horizontal" id="ButtonSize">
+				<a href="#Home" id="Home" data-role="button" data-icon="home" 
+				data-inline="true" data-iconpos="right" >Home</a>
+				<a href="#Help" id="Help" data-role="button" data-icon="help" 
+				data-inline="true" data-iconpos="right">Help</a>
+			</div>
+			
+		</div>
+		
+		<div data-role="content" id="OrganiseContent">
+			
+			<hr class="ui-btn-hover-c">
+			<div id="">
+				I once again thank you very much for using this application. The intended 
+				purpose is to aid you in calculating your grade points. 
+				I hope it will serve its purpose in the direst of moments.
+				Any misuse of this application is solely borne on the user. <br>
+				I outrightly disclaim of any liability or warranty towards the misuse of this application.
+				<br><br>
+			</div>
+			
+			<div id="">
+				Feel free to forward any queries, comments and even advice to the 
+				given contacts routes below. I am so much concerned about you which is 
+				why I spend most of my time looking through your difficulties. 
+				I am always open to questions, don't hesistate to ask.<br><br>
+			</div>
+			
+			<div id="">
+				Copyright &copy; 2015<br>
+				The use of IPAM logo or any reference made to IPAM or the 
+				University of Sierra Leone does not give this program or its 
+				developer a copyright; the logo and any other reference is solely the 
+				property of IPAM - USL. <br><br>
+			</div>
+			
+			<div id="">
+				DEVERLOPER: SALIEU SESAY<br>
+				DEPARTMENT: BSC (HONS) APPLIED ACCOUNTING<br><br>
+			</div>
+			
+			<div id="">
+				CONTACT ROUTES:<br>
+				Mobile +23278509664<br>
+				Mobile +23288338627<br>
+				<br>
+				EMAIL: salmanorsar2009@yahoo.com<br>
+				EMAIL: exoticallisticsm@gmail.com<br><br>
+			</div>
+			
+			<hr class="ui-btn-hover-a">
+			<div>
+				<div>
+					This help section is included mainly to give you an insight into how the 
+					various grade points are calculated and applied in this application. 
+					As you can see below the appropriate remarks are also given so as to fully explain 
+					the meanings of the letters, however the grade percentages and the grade points are 
+					the most important.
+					<br>
+					You can use this special help section to verify the correctness of all the points 
+					used in the application, and also as a reference point.<br><br>
+
+					GRADE POINT SYSTEM:<br>
+
+				</div>
+				
+				<div>
+					<table class="ui-btn-hover-a">
+						<tbody>
+						<tr><td><a href="" data-role="button" id="GradingSystem" data-theme="a" 
+						data-icon="arrow-d" data-iconpos="right" collapsible="true">Grading Sysetem</a></td></tr>
+					
+					<tr>
+						<td>
+							<table class="ui-dialog ui-overlay-a" id="GradeSheet">
+								<tbody>
+									<tr>
+										<th>LETTER</th>       
+										<th>% GRADE</th>
+										<th>GRADE POINT</th>
+										<th>REMARKS</th>
+									</tr>
+									
+									<tr>
+										<td>A+</td>    
+										<td>70 - 100</td>
+										<td>4.00</td>
+										<td>EXCELLENT</td>
+									</tr>
+
+									<tr>
+										<td>A-</td>
+										<td>65 - 69</td>
+										<td>3.75</td>
+										<td>VERY GOOD</td>
+									</tr>
+									
+									<tr>
+										<td>B+</td>
+										<td>60 - 64</td>
+										<td>3.25</td>
+										<td>GOOD</td>
+									</tr>
+									
+									<tr>
+										<td>B</td>
+										<td>55 - 59</td>
+										<td>3.00</td>
+										<td>CREDIT </td>
+									</tr>
+									
+									<tr>
+										<td>B-</td>
+										<td>50 - 54</td>
+										<td>2.75</td>
+										<td>CREDIT</td>
+									</tr>
+									
+									<tr>
+										<td>C+</td>
+										<td>45 - 49</td>
+										<td>2.50</td>
+										<td>PASS</td>
+									</tr>    
+    
+									<tr>
+										<td>C-</td>
+										<td>40 - 44</td>
+										<td>2.25</td>
+										<td>PASS</td>
+									</tr>
+									
+									<tr>
+										<td>D</td>
+										<td>30 -39</td>
+										<td>1.75</td>
+										<td>FAIL</td>
+										<td></td>
+
+									</tr>
+									
+									<tr>
+										<td>F</td>
+										<td>0 - 29</td>
+										<td>0.00</td>
+										<td>FAIL</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+				</div>
+			</div>
+			<hr class="ui-btn-hover-a">
+			<div>
+				If you are unfamiliar with the above grade system, refer to the university rule 
+				document that explains these points in details.
+				<br><br>
+				If you find any errors therein please forward your 
+				queries to the contact information given in the conclusion section.
+			</div>
+			
+			<div>
+				<hr class="ui-btn-hover-a"><font color="#e7f7ff" face="droid" size="2px">SalmanTech | Grade Point 
+				Calculator<br>All Right Reserved &copy; 2015</font>
+			</div>
+		</div>		
+  		</div> <!--About Window ends-->
+  		
+  	<!--Dialog of the complete grade point calculator	
+  	<div data-role="page" id="CompleteExCon">
+    		<div data-role="header" id="Complete-Dialog-Header">
+    			Complete Grade Point Calculator
+    		</div>
+    		
+   		<div data-role="content">
+   			<div id="loginmsg">
+   				<font face="droid"><p>The Complete Grade Point Calculator provides  
+				an extra window complete enough to calculate your exams and continuous 
+				grades, displays your various grade points, and shows your Average Grade Point.<br><br>
+   				This window is licenced and requires you to get a login code in order to have access.
+    			<br><br>
+    			If you wish to launch this window, enter the registration password below:<br><br></p></font>
+    		</div>	
+			
+			<div data-role="fieldcontainer">					
+   				<table>
+   					<tbody>
+   						<tr>
+   							<td ><span id="status" style="font-family:droid">Password: </span></td>
+   							<td><input id="RegistrationCode"></td>
+    						<td id="imgAlign"><img src="" alt="validation" id="imgval" ></td>
+   						</tr>
+    								
+   						<tr>
+   							<td id="CtrlBtns"><a href="" id="OpenCompleteExCon" data-inline="true" data-role="button">
+   									<span id="submitORsignin">Register</span></a></td>
+    								
+    						<td id="imgAlign">
+    								<a href="data/FullExCon.html" data-prefetch data-ajax="false"><img src="res/right-arrow.jpg" 
+    								alt="activate" id="imgAct"></a>
+    						</td>
+    					</tr>	
+    				</tbody>  							
+    			</table>
+           	</div>
+       	</div>
+     </div>-->
+     
+    
+	 <!--welcome screen for first time installation
+    <div id="Welcome" data-role="page">
+     	<div data-role="header">
+     		SalmanTech | Ipam Grade Point Calculator<br>
+     		v0.1.1
+     	</div>
+     	
+     	<div data-role="content">
+ 			<p><font face="droid">Thank you for selecting this software package. By installing it you have clearly displayed your 
+ 			intention to abide by all the rules and regulation of the concerned application.
+ 			
+ 			<hr>
+ 			
+ 			As a matter of fact this application is designed to greatly aid you in calculating your grade points.<br>
+ 			It may be perceived that it is custom made for <i>IPAMERS</i> both staff and staff. It is really fasinating <br>
+ 			how interesting four years at IPAM would be like.
+ 			<br>
+ 			As the developer of this application I still keep on wondering I vast someone can become by just being curious 
+ 			about every thing, ranging from normal phenomenon to some other things.
+ 			<br>
+ 			I am actually I Accounting student, but really interested to know more about other areas of life and not just 
+ 			Accounting. Trust me to be frank the world is powered by IT and no one dears denies that.
+ 			<br>
+ 			This application is a token to my fellow IPAMERS as I depart from such an unending pool of knowledge.
+ 			<br>
+ 			Also trust me you can do better if only you are willing to comprehend to that it does not take genius to 
+ 			unluck your full potential, and it surly does not take class works and assignment to push you to know more.
+ 			<br>
+ 			
+ 			I wish to set this example for all students and as well inspire them to keep up with research, and find out 
+ 			how exciting it can be to know more than you are willing to know.
+ 			<br><br>
+ 			With this application your problems in solving your grading issue is drastically reduced. I reasonably assure 
+ 			you that using it is as simple as punching in your grades and clicking the calculate button.
+ 			<br>
+ 			I hope it will come in handy, and save your day.
+ 			<br><br>
+ 			Thank you very much.
+ 			<hr>
+ 			SalmanTech | Grade Point Calculator<br>
+ 			All Right Reserved &copy; 2015.
+ 			
+ 			</font></p>    	
+      	</div>
+      	
+      	<div data-role="content" id="ButtonSize">
+      		<a href="" data-role="button" data-inline="true" class="align-accept" id="accept">Accept</a> 
+      		<a href="" data-role="button" data-inline="true" class="align-decline" id="decline">Decline</a>
+      	</div>
+    
+     </div>-->
+ </body>
+</html>

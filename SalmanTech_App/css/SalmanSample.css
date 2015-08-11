@@ -1,0 +1,1203 @@
+﻿/*******SalmanTech | Grade Point Calculator*******
+************Compelete Style Sheet**************/
+
+@charset "utf-8";
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#ButtonSize {
+	font-size: xx-small;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	vertical-align: central;
+}
+.Logo {
+	border: 2px inset #666666;
+	width: 125px;
+	display: block;
+	clear: both;
+	height: 70px;
+}
+.LogoText {
+	border: 2px inset #666666;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #33CC33;
+	font-weight: bold;
+	text-align: center;
+}
+#InputBox1 {
+	width: 36px;
+	font-size: small;
+}
+#InputBox2 {
+	width: 36px;
+	font-size: small;
+}
+#InputBox3 {
+	width: 36px;
+	font-size: small;
+}
+#InputBox4 {
+	width: 36px;
+	font-size: small;
+}
+#InputBox5 {
+	width: 36px;
+	font-size: small;
+}
+#InputBox6 {
+	width: 36px;
+	font-size: small;
+}
+.formatGrade {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	line-height: 30px;
+	border: 2px inset #666666;
+}
+#SaveBtn {
+}
+#Message {
+	width: 100%;
+	font-size: small;
+}
+#GradeOne {
+	font-size: small;
+	width: 170px;
+
+}
+#GradeTwo {
+	width: 170px;
+	font-size: small;
+
+}
+#GradeThree {
+	width: 170px;
+	font-size: small;
+
+}
+#GradeFour {
+	width: 170px;
+	font-size: small;
+
+}
+#GradeFive {
+	width: 170px;
+	font-size: small;
+}
+#GradeSix {
+	width: 170px;
+	font-size: small;
+
+}
+#CtrlBtns{
+	width: 30px;
+	font-size: xx-small;
+}
+#AverageGP {
+	font-size: small;
+	width: 170px;
+
+}
+#SalmanTech {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	padding: 2px;
+	height: 30px;
+	background-color: #000000;
+	color: #FFFFFF;
+	width: 100%;
+	top: 0px;
+	background-repeat: repeat;
+	background-image: none;
+}
+#FixedHeader {
+	border-color: #333333;
+	border-width: 2px;
+	background-size: 1px 10px;
+	background: none 0 0px repeat scroll #000000;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 35px;
+	z-index: 100;
+	left: 0px;
+	display: block;
+	clear: both;
+	visibility: visible;
+	padding-top: 5px;
+	text-indent: 4px;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif, droid;
+	font-weight:bolder;
+}
+#OrganiseContent {
+	margin-top: 40px;
+}
+#SampleBtnCtrl {
+	background-repeat: no-repeat;
+}
+#HeaderControl {
+
+}
+#CumuInputBox1 {
+	width: 100px;
+	font-size: small;
+}
+#CumuInputBox2 {
+	width: 100px;
+	font-size: small;
+}
+#CumuInputBox3 {
+	width: 100px;
+	font-size: small;
+}
+#CumuInputBox4 {
+	width: 100px;
+	font-size: small;
+}
+
+#SemesterAGP {
+	font-size: small;
+	width: 100px;
+	
+}
+#CumuPoint {
+	padding: 2px;
+	font-family: Cambria;
+	font-size: x-small;
+}
+#NumberOfYears {
+	padding: 2px;
+	font-family: Cambria;
+	font-size: x-small;
+}
+#Name {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: small;
+	width: 150px;
+}
+#IdNo {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: small;
+	width: 150px;
+}
+#CurrentYr {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: small;
+	width: 150px;
+}
+#Depart {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: small;
+	width: 195px;
+}
+#CtrlDetails {
+	vertical-align: central;
+	width: 60px;
+	table-layout: auto;
+}
+#Ex1 {
+	font-size: small;
+	width: 38px;
+
+}
+#Ex2 {
+	font-size: small;
+	width: 38px;
+
+}
+#Ex3 {
+	font-size: small;
+	width: 38px;
+
+}
+#Ex4 {
+	font-size: small;
+	width: 38px;
+}
+#Ex5 {
+	font-size: small;
+	width: 38px;
+
+}
+#Ex6 {
+	font-size: small;
+	width: 38px;
+
+}
+#Con1 {
+	font-size: small;
+	width: 38px;
+
+}
+#Con2 {
+	font-size: small;
+	width: 38px;	
+}
+#Con3 {
+	font-size: small;
+	width: 38px;
+}
+#Con4 {
+	font-size: small;
+	width: 38px;
+}
+#Con5 {
+	font-size: small;
+	width: 38px;
+}
+#Con6 {
+	font-size: small;
+	width: 38px;
+}
+#TG1 {
+	font-size: small;
+	width: 150px;
+
+}
+#TG2 {
+	font-size: small;
+	width: 150px;
+}
+#TG3 {
+	font-size: small;
+	width: 150px;
+}
+#TG4 {
+	font-size: small;
+	width: 150px;
+}
+#TG5 {
+	font-size: small;
+	width: 150px;
+}
+#TG6 {
+	font-size: small;
+	width: 150px;
+}
+#TextComment {
+	height: 85px;
+	vertical-align: top;
+	width: 170px;
+	font-family: droid;
+	font-size: x-small;
+}
+#ECCtrlBtns {
+	width: 50px;
+	vertical-align: middle;
+	font-size: x-small;
+}
+#CumuCtrlBtns {
+	width: 50px;
+	vertical-align: middle;
+	font-size: x-small;
+}
+#LeftMenu {
+	width: 30%;
+	float: left;
+}
+#RightMenu {
+	width: 60%;
+	float: right;
+}
+#MainWinHelp {
+	font-size: x-small;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 135px;
+}
+#ExamConHelp {
+	font-size: x-small;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 135px;
+}
+#CumulatedHelp {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: x-small;
+	width: 135px;
+}
+#GradingSystem {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: x-small;
+	width: 160px;
+	color: #CCFFFF;
+}
+#ExtendRight {
+	width: 100%;
+	height: 100%;
+}
+#ControlRight {
+	overflow: scroll;
+	clear: both;
+	width: 145px;
+	visibility: visible;
+	height: 420px;
+	text-align: left;
+	float: left;
+	display: block;
+	margin-left: 10px;
+}
+#GradeSheet {
+	table-layout: auto;
+	text-align: center;
+	border-style: dashed;
+	border-width: 2px;
+	border-spacing: 2px;
+	border-collapse: separate;
+	caption-side: top;
+}
+ a:visited, a:link {
+	text-decoration: none;
+}
+#EnterDepart {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: small;
+	width: 150px;
+}
+#pin {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: small;
+	width: 150px;
+}
+#TotalAGP {
+	font-size: small;
+	width: 100px;
+	
+}
+.ui-icon-help {
+	background: #666;
+	background: rgba(0,0,0,.4);
+	background-position: center center;
+	background-image: url('../res/help-480px.png');
+	background-repeat: no-repeat;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 12px;
+}
+.ui-icon-excon {
+	background: #666;
+	background: rgba(0,0,0,.4);
+	background-image: url('../res/CumEx.png');
+	background-repeat: no-repeat;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 2px;
+}
+.ui-icon-cumu {
+	background: #666;
+	background: rgba(0,0,0,.4);
+	background-image: url('../res/Cumu.png');
+	background-repeat: no-repeat;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 2px;
+}
+#AlignHelp {
+	text-align: right;
+	float: right;
+}
+#ExSizebtn {
+	width: 117px;
+	color: #FFFFFF;
+}
+.ExSizebtn:hover {
+	
+}
+#CumSizebtn {
+	color:#FFFFFF;
+}
+#AboutSizebtn {
+	color:#FFFFFF;
+}
+#Home {
+	color: #FFFFFF;
+}
+#Help {
+	color: #FFFFFF;
+}
+#Back {
+	color: #FFFFFF;
+}
+#Next {
+	color: #FFFFFF;
+}
+#fat {
+	z-index: 0;
+}
+#textctrl {
+	font-family: droid;
+	font-size: small;
+	display: block;
+	clear: both;
+	color:#FFFFFF;
+}
+#Complete-Dialog-Header {
+	text-align: center;
+	height: 30px;
+	font-size: small;
+	font-family: droid;
+}
+#RegistrationCode {
+	width: 90px;
+	font-family: droid;
+	font-size: small;
+}
+#imgval{
+	border-style: none;
+	width: 18px;
+	height: 18px;
+	display: block;
+	clear: both;
+}
+
+#imgval:hover {
+	
+}
+#imgAlign {
+	vertical-align: middle;
+}
+#imgAct {
+	width: 30px;
+	height: 22px;
+}
+#submitORsignin {
+	color: #000000;
+}
+.align-accept {
+	float: left;
+}
+.align-decline {
+	float: right;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#ButtonSize {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+.Logo {
+	width: 170px;
+	display: block;
+	clear: both;
+	border: 2px outset #F8F3D3;
+	padding: 1px;
+}
+.LogoText {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	color: #33CC33;
+	text-align: center;
+	border: 2px inset #666666;
+	vertical-align: middle;
+}
+#InputBox1 {
+	width: 55px;
+}
+#InputBox2 {
+	width: 55px;
+}
+#InputBox3 {
+	width: 55px;
+}
+#InputBox4 {
+	width: 55px;
+}
+#InputBox5 {
+	width: 55px;
+}
+#InputBox6 {
+	width: 55px;
+}
+.formatGrade {
+}
+#SaveBtn {
+	
+}
+#Message {
+	font-size: medium;
+	width: 100%;
+}
+#GradeOne {
+	width: 220px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+#GradeTwo {
+	width: 220px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+#GradeThree {
+	width: 220px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+#GradeFour {
+	width: 220px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+#GradeFive {
+	width: 220px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+#GradeSix {
+	width: 220px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+#CtrlBtns {
+	font-size: small;
+	width: 45px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#AverageGP {
+	width: 220px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+#SalmanTech {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+}
+#HeaderControl {
+	
+}
+#CumuInputBox1 {
+	width: 200px;
+	font-size: medium;
+}
+#CumuInputBox2 {
+	width: 200px;
+	font-size: medium;
+}
+#CumuInputBox3 {
+	width: 200px;
+	font-size: medium;
+}
+#CumuInputBox4 {
+	width: 200px;
+	font-size: medium;
+}
+
+#SemesterAGP {
+	font-size: medium;
+	width: 200px;
+	
+}
+#CumuPoint {
+	padding: 2px;
+	font-family: Cambria;
+	font-size: medium;
+}
+#NumberOfYears {
+	padding: 2px;
+	font-family: Cambria;
+	font-size: medium;
+}
+#Name {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: medium;
+	width: 180px;
+}
+#IdNo {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: medium;
+	width: 180px;
+}
+{
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: medium;
+	width: 180px;
+}
+
+#CurrentYr {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: medium;
+	width: 180px;
+}
+#Depart {
+	
+}
+#CtrlDetails {
+	
+}
+#Ex1 {
+	width: 60px;
+	font-size: medium;
+}
+#Ex2 {
+	width: 60px;
+	font-size: medium;
+}
+#Ex3 {
+	width: 60px;
+	font-size: medium;
+}
+#Ex4 {
+	width: 60px;
+	font-size: medium;
+}
+#Ex5 {
+	width: 60px;
+	font-size: medium;
+}
+#Ex6 {
+	width: 60px;
+	font-size: medium;
+}
+#Con1 {
+	width: 60px;
+	font-size: medium;
+}
+#Con2 {
+	width: 60px;
+	font-size: medium;
+}
+#Con3 {
+	width: 60px;
+	font-size: medium;
+}
+#Con4 {
+	width: 60px;
+	font-size: medium;
+}
+#Con5 {
+	width: 60px;
+	font-size: medium;
+}
+#Con6 {
+	width: 60px;
+	font-size: medium;
+}
+#TG1 {
+	font-size: medium;
+	width: 220px;
+
+}
+#TG2 {
+	font-size: medium;
+	width: 220px;
+}
+#TG3 {
+	font-size: medium;
+	width: 220px;
+}
+#TG4 {
+	font-size: medium;
+	width: 220px;
+}
+#TG5 {
+	font-size: medium;
+	width: 220px;
+}
+#TG6 {
+	font-size: medium;
+	width: 220px;
+}
+#TextComment {
+	height: 120px;
+	vertical-align: top;
+	width: 190px;
+	font-size:small;
+}
+#ECCtrlBtns {
+	font-size: small;
+	width: 50px;
+}
+#CumuCtrlBtns {
+	font-size: small;
+	width: 50px;
+}
+#LeftMenu {
+	width: 30%;
+	float: left;
+
+}
+#RightMenu {
+	width: 60%;
+	float: right;
+}
+#MainWinHelp {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	width: 180px;
+}
+#ExamConHelp {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	width: 180px;
+}
+#CumulatedHelp {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	width: 180px;
+}
+#GradingSystem {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	width: 180px;
+}
+#ExtendRight {
+	
+}
+#ControlRight {
+	width: 335px;
+	overflow: auto;
+	float: left;
+	display: block;
+	visibility: visible;
+	clear: both;
+}
+#GradeSheet {
+	
+}
+ a:visited {
+	text-decoration: none;
+}
+#EnterDepart {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: medium;
+	width: 180px;
+}
+#pin {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: medium;
+	width: 180px;
+}
+#TotalAGP {
+	font-size: medium;
+	width: 200px;
+	
+}
+.ui-icon-help {
+	background-image:url('../res/Help-HD.png');
+	background-size: 18px 18px;
+}
+.ui-icon-excon {
+	background-image:url('../res/CumEx-HD.JPG');
+	background-size: 18px 18px;
+}
+.ui-icon-cumu {
+	background-image:url('../res/Cumu-HD.JPG')
+	background-size: 18px 18px;
+}
+#ExSizebtn {
+	width: 190px;
+	color: #FFFFFF;
+}
+#Home {
+	
+}
+#Back {
+	
+}
+#Next {
+	
+}
+#textctrl {
+	font-size:medium;
+}
+#Complete-Dialog-Header {
+	height: 50px;
+	font-size: medium;
+}
+#RegistrationCode {
+	
+}
+#imgval{
+	
+}
+#imgAlign {
+	
+}
+#imgAct {
+	
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#ButtonSize {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+}
+.Logo {
+	width: 200px;
+	display: block;
+	clear: both;
+	border: 1px ridge #CCFFFF;
+	padding: 1px;
+}
+.LogoText {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: large;
+	color: #33CC33;
+	font-weight: bold;
+	text-align: center;
+	padding: 1px;
+	border: 1px ridge #D1D6B4;
+}
+#InputBox1 {
+	width: 70px;
+}
+#InputBox2 {
+	width: 70px;
+}
+#InputBox3 {
+	width: 70px;
+}
+#InputBox4 {
+	width: 70px;
+}
+#InputBox5 {
+	width: 70px;
+}
+#InputBox6 {
+	width: 70px;
+}
+.formatGrade {
+}
+#SaveBtn {
+	
+}
+#Message {
+	font-size: large;
+	width: 100%;
+}
+#GradeOne {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 240px;
+}
+#GradeTwo {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 240px;
+}
+#GradeThree {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 240px;
+}
+#GradeFour {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 240px;
+}
+#GradeFive {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 240px;
+}
+#GradeSix {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 240px;
+}
+#CtrlBtns {
+	font-size: medium;
+}
+#AverageGP {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 240px;
+}
+#SalmanTech {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: large;
+}
+#HeaderControl {
+	
+}
+#CumuInputBox1 {
+	width: 250px;
+	font-size: large;
+}
+#CumuInputBox2 {
+	width: 250px;
+	font-size: large;
+}
+#CumuInputBox3 {
+	width: 250px;
+	font-size: large;
+}
+#CumuInputBox4 {
+	width: 250px;
+	font-size: large;
+}
+
+#SemesterAGP {
+	width: 250px;
+	font-size: large;
+	
+}
+#CumuPoint {
+	padding: 2px;
+	font-family: Cambria;
+	font-size: large;
+}
+#NumberOfYears {
+	padding: 2px;
+	font-family: Cambria;
+	font-size: large;
+}
+#Name {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: large;
+	width: 210px;
+}
+#IdNo {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: large;
+	width: 210px;
+}
+#CurrentYr {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: large;
+	width: 210px;
+}
+#Depart {
+	
+}
+#CtrlDetails {
+	
+}
+#Ex1 {
+	width: 70px;
+	font-size: large;
+
+}
+#Ex2 {
+	width: 70px;
+	font-size: large;
+}
+#Ex3 {
+	width: 70px;
+	font-size: large;
+}
+#Ex4 {
+	width: 70px;
+	font-size: large;
+}
+#Ex5 {
+	width: 70px;
+	font-size: large;
+}
+#Ex6 {
+	width: 70px;
+	font-size: large;
+}
+#Con1 {
+	width: 70px;
+	font-size: large;
+}
+#Con2 {
+	width: 70px;
+	font-size: large;
+}
+#Con3 {
+	width: 70px;
+	font-size: large;
+}
+#Con4 {
+	width: 70px;
+	font-size: large;
+}
+#Con5 {
+	width: 70px;
+	font-size: large;
+}
+#Con6 {
+	width: 70px;
+	font-size: large;
+}
+#TG1 {
+	font-size: large;
+	width: 240px;
+}
+#TG2 {
+	font-size: large;
+	width: 240px;
+}
+#TG3 {
+	font-size: large;
+	width: 240px;
+}
+#TG4 {
+	font-size: large;
+	width: 240px;
+}
+#TG5 {
+	font-size: large;
+	width: 240px;
+}
+#TG6 {
+	font-size: large;
+	width: 240px;
+}
+#TextComment {
+	height: 140px;
+	vertical-align: top;
+	width: 210px;
+	font-size:medium;
+}
+#ECCtrlBtns {
+	font-size: medium;
+	width: 80px;
+}
+#CumuCtrlBtns {
+	font-size: medium;
+	width: 80px;
+}
+#LeftMenu {
+	width: 30%;
+	float: left;
+}
+
+#RightMenu {
+	width: 68%;
+	float: right;
+
+}
+#MainWinHelp {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 200px;
+}
+#ExamConHelp {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 200px;
+
+} 
+#CumulatedHelp {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 200px;
+
+}
+#GradingSystem {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	width: 210px;
+
+}
+#ExtendRight {
+	
+}
+#ControlRight {
+	width: 450px;
+	overflow: auto;
+	visibility: visible;
+	display: block;
+	float: left;
+	clear: both;
+}
+#GradeSheet {
+	
+}
+ a:visited {
+	text-decoration: none;
+}
+#EnterDepart {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: large;
+	width: 210px;
+}
+#pin {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: large;
+	width: 210px;
+}
+#TotalAGP {
+	font-size: large;
+	width: 250px;
+	
+}
+#ExSizebtn {
+	width: 225px;
+	color: #FFFFFF;
+	
+}
+#Home {
+	
+}
+#Back {
+	
+}
+#Next {
+	
+}
+#textctrl {
+	font-size:large;
+}
+#Complete-Dialog-Header {
+	height: 55px;
+	font-size: large;
+}
+#RegistrationCode {
+	
+}
+#imgval{
+	
+}
+#imgAlign {
+	
+}
+#imgAct {
+	
+}
+}

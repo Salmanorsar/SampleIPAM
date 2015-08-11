@@ -1,0 +1,161 @@
+﻿#Input {
+	width: 42px;
+}
+#StatusBarTable {
+	border: 2px outset #E4EDEB;
+	table-layout: auto;
+	caption-side: bottom;
+	padding-right: 1px;
+	padding-left: 1px;
+	font-family: Ebrima;
+	font-size: medium;
+	color: #FFFFFF;
+	background-color: #5A7178;
+	clear: both;
+	display: block;
+}
+.FormatIpam {
+	border: 1px outset #E1F7F7;
+	color: #00CC00;
+	text-transform: uppercase;
+	font-size: large;
+	vertical-align: central;
+	text-align: center;
+	font-weight: bold;
+}
+#Logo {
+	width: 150px;
+	height: 100px;
+	padding: 1px;
+	border: thin inset #CCFFFF;
+}
+br {
+	line-height: normal;
+}
+br {
+}
+.RightAlign {
+	text-align: right;
+	width: 150px;
+}
+h1 {
+}
+h1 {
+	background-color: #EAEAD9;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: x-large;
+	color: #0C1349;
+	padding: 1px;
+	margin: 1px;
+	display: block;
+	clear: both;
+	visibility: collapse;
+	overflow: auto;
+}
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#Header {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: x-large;
+	font-weight: bold;
+	font-style: normal;
+	color: #201D47;
+	line-height: 25px;
+	background-color: #D3D9DA;
+	background-attachment: fixed;
+	padding: 3px 2px 2px 3px;
+	display: block;
+	clear: both;
+	border: 2px outset #D7EEEB;
+	margin-top: 0px;
+}
+#InputBox1 {
+	width: 42px;
+}
+#InputBox2 {
+	width: 42px;
+}
+#InputBox3 {
+	width: 42px;
+}
+#InputBox4 {
+	width: 42px;
+}
+#InputBox5 {
+	width: 42px;
+}
+#InputBox6 {
+	width: 42px;
+}
+#Message {
+	line-height: normal;
+	height: 20px;
+	width: 300px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+#GradeOne {
+	width: 200px;
+}
+#GradeTwo {
+	width: 200px;
+}
+#GradeThree {
+	width: 200px;
+}
+#GradeFour {
+	width: 200px;
+}
+.#GradeFive {
+	width: 200px;
+}
+#GradeSix {
+	width: 200px;
+}
+#GradeFive {
+	width: 200px;
+}
+#ExamCon {
+	width: 120px;
+	height: 20px;
+}
+#Cumulated {
+	height: 20px;
+	width: 98px;
+}
+#Help {
+	height: 20px;
+	width: 40px;
+}
+#About {
+	height: 20px;
+	width: 35px;
+}
+#ExamBtn {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: small;
+}
+#CumuBtn {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: small;
+}
+#HelpBtn {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: small;
+}
+#AboutBtn {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: small;
+}
+#MenuTable {
+	border-spacing: 1px;
+	border-collapse: collapse;
+	position: relative;
+	padding-top: 10px;
+	box-shadow: 2px 2px;
+}
+#CtrlBtns {
+	vertical-align: top;
+	width: 20px;
+}
